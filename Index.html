@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free online tools for PDF editing, image processing, QR codes, developer utilities, text manipulation, and more. 100+ tools in one place!" />
+  <meta name="keywords" content="online tools, PDF tools, image tools, QR generator, developer tools, text tools, free utilities" />
+  <meta name="author" content="Tools Hub" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Ultimate Tools Hub - 100+ Free Online Tools" />
+  <meta property="og:description" content="Free online tools for PDF editing, image processing, QR codes, developer utilities, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tools-hub.example.com" />
+  <meta property="og:image" content="https://tools-hub.example.com/images/og-image.jpg" />
+  <link rel="canonical" href="https://tools-hub.example.com" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <title>Ultimate Tools Hub - 100+ Free Online PDF, Image, QR & Developer Tools</title>
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+  
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --primary-dark: #2563eb;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background-color: #f1f5f9;
+      color: var(--dark);
+      line-height: 1.5;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 300px;
+      height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+
+    .search-bar {
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 50px;
+      border: none;
+      font-size: 1rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+
+    .search-bar input:focus {
+      outline: 2px solid rgba(255,255,255,0.3);
+    }
+
+    /* Ad Container Styles */
+    .ad-container {
+      background: white;
+      padding: 1rem;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow: hidden;
+      max-width: 1200px;
+    }
+    
+    .ad-label {
+      font-size: 0.8rem;
+      color: var(--gray);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .container {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .category {
+      margin-bottom: 3rem;
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .category h2 {
+      font-size: 1.5rem;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .tool-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.2rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+      border: 1px solid #e2e8f0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+      border-color: var(--primary);
+    }
+
+    .tool-icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+
+    .tool-card a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      flex: 1;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .tagline {
+        font-size: 1rem;
+      }
+      
+      .tool-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
+      
+      .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🧰 Ultimate Tools Hub</h1>
+      <p class="tagline">100+ free tools for developers, designers, and everyone</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for tools..." aria-label="Search tools">
+      </div>
+    </div>
+  </header>
+
+  <!-- Top Ad Banner -->
+  <div class="ad-container">
+    <span class="ad-label">Advertisement</span>
+    <!-- AdSense Ad Unit -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+         data-ad-slot="YOUR_TOP_BANNER_SLOT_ID"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <div class="container">
+
+    <!-- PDF & Document Tools -->
+    <div class="category">
+      <h2>📄 PDF & Document Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">📄</div><a href="/pdf-merger">Merge PDF</a></div>
+        <div class="tool-card"><div class="tool-icon">✂️</div><a href="/pdf-splitter">Split PDF</a></div>
+        <div class="tool-card"><div class="tool-icon">🔄</div><a href="/pdf-rotator">Rotate PDF</a></div>
+        <div class="tool-card"><div class="tool-icon">🗜️</div><a href="/pdf-compressor">Compress PDF</a></div>
+        <div class="tool-card"><div class="tool-icon">🖼️</div><a href="/pdf-to-image">PDF to Image</a></div>
+        <div class="tool-card"><div class="tool-icon">🔢</div><a href="/add-page-numbers">Add Page Numbers</a></div>
+        <div class="tool-card"><div class="tool-icon">👁️</div><a href="/pdf-viewer">PDF Viewer</a></div>
+      </div>
+    </div>
+
+    <!-- QR & Barcode Tools -->
+    <div class="category">
+      <h2>📱 QR & Barcode Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">🔳</div><a href="/qr-generator">QR Code Generator</a></div>
+        <div class="tool-card"><div class="tool-icon">📊</div><a href="/barcode-generator">Barcode Generator</a></div>
+        <div class="tool-card"><div class="tool-icon">📶</div><a href="/wifi-qr-generator">WiFi QR Generator</a></div>
+        <div class="tool-card"><div class="tool-icon">🎨</div><a href="/custom-qr">Custom QR Code</a></div>
+        <div class="tool-card"><div class="tool-icon">📷</div><a href="/qr-scanner">QR Code Scanner</a></div>
+      </div>
+    </div>
+
+    <!-- Mid-Page Ad Banner -->
+    <div class="ad-container">
+      <span class="ad-label">Advertisement</span>
+      <!-- AdSense Ad Unit -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+           data-ad-slot="YOUR_MID_PAGE_SLOT_ID"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- Image Tools -->
+    <div class="category">
+      <h2>🖼️ Image Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">🗜️</div><a href="/image-compressor">Image Compressor</a></div>
+        <div class="tool-card"><div class="tool-icon">↔️</div><a href="/resize-image">Resize Image</a></div>
+        <div class="tool-card"><div class="tool-icon">✂️</div><a href="/crop-image">Crop Image</a></div>
+        <div class="tool-card"><div class="tool-icon">🔄</div><a href="/image-converter">Format Converter</a></div>
+        <div class="tool-card"><div class="tool-icon">💧</div><a href="/watermark">Add Watermark</a></div>
+        <div class="tool-card"><div class="tool-icon">🎨</div><a href="/color-picker">Color Picker</a></div>
+        <div class="tool-card"><div class="tool-icon">🌓</div><a href="/image-filters">Image Filters</a></div>
+        <div class="tool-card"><div class="tool-icon">🔤</div><a href="/image-to-base64">Base64 Converter</a></div>
+        <div class="tool-card"><div class="tool-icon">🖥️</div><a href="/favicon-generator">Favicon Generator</a></div>
+      </div>
+    </div>
+
+    <!-- Text Tools -->
+    <div class="category">
+      <h2>📝 Text Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">🔢</div><a href="/word-counter">Word Counter</a></div>
+        <div class="tool-card"><div class="tool-icon">✂️</div><a href="/text-cleaner">Text Cleaner</a></div>
+        <div class="tool-card"><div class="tool-icon">🔄</div><a href="/case-converter">Case Converter</a></div>
+        <div class="tool-card"><div class="tool-icon">🔠</div><a href="/reverse-text">Reverse Text</a></div>
+        <div class="tool-card"><div class="tool-icon">😊</div><a href="/emoji-translator">Emoji Translator</a></div>
+        <div class="tool-card"><div class="tool-icon">🔗</div><a href="/slug-generator">Slug Generator</a></div>
+        <div class="tool-card"><div class="tool-icon">📜</div><a href="/lorem-ipsum">Lorem Ipsum</a></div>
+        <div class="tool-card"><div class="tool-icon">📻</div><a href="/morse-code">Morse Code</a></div>
+        <div class="tool-card"><div class="tool-icon">🔒</div><a href="/text-encryption">Text Encryption</a></div>
+      </div>
+    </div>
+
+    <!-- Calculation & Converter Tools -->
+    <div class="category">
+      <h2>📊 Calculation & Converters</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">🎂</div><a href="/age-calculator">Age Calculator</a></div>
+        <div class="tool-card"><div class="tool-icon">📅</div><a href="/date-difference">Date Difference</a></div>
+        <div class="tool-card"><div class="tool-icon">📏</div><a href="/unit-converter">Unit Converter</a></div>
+        <div class="tool-card"><div class="tool-icon">🔢</div><a href="/number-converter">Number Converter</a></div>
+        <div class="tool-card"><div class="tool-icon">🏛️</div><a href="/roman-numbers">Roman Numbers</a></div>
+        <div class="tool-card"><div class="tool-icon">%</div><a href="/percentage-calculator">Percentage Calc</a></div>
+        <div class="tool-card"><div class="tool-icon">⚖️</div><a href="/bmi-calculator">BMI Calculator</a></div>
+        <div class="tool-card"><div class="tool-icon">💲</div><a href="/discount-calculator">Discount Calc</a></div>
+        <div class="tool-card"><div class="tool-icon">🕒</div><a href="/time-zone">Time Zone</a></div>
+        <div class="tool-card"><div class="tool-icon">🏦</div><a href="/loan-calculator">Loan Calculator</a></div>
+      </div>
+    </div>
+
+    <!-- Developer Tools -->
+    <div class="category">
+      <h2>👨‍💻 Developer Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">{}</div><a href="/json-formatter">JSON Formatter</a></div>
+        <div class="tool-card"><div class="tool-icon">📄</div><a href="/html-tools">HTML Tools</a></div>
+        <div class="tool-card"><div class="tool-icon">🎨</div><a href="/css-tools">CSS Tools</a></div>
+        <div class="tool-card"><div class="tool-icon">📜</div><a href="/js-tools">JS Tools</a></div>
+        <div class="tool-card"><div class="tool-icon">.*</div><a href="/regex-tester">Regex Tester</a></div>
+        <div class="tool-card"><div class="tool-icon">🎨</div><a href="/color-picker">Color Picker</a></div>
+        <div class="tool-card"><div class="tool-icon">🆔</div><a href="/uuid-generator">UUID Generator</a></div>
+        <div class="tool-card"><div class="tool-icon">🔣</div><a href="/base64-tools">Base64 Tools</a></div>
+        <div class="tool-card"><div class="tool-icon">🌐</div><a href="/url-encoder">URL Encoder</a></div>
+        <div class="tool-card"><div class="tool-icon">🕵️</div><a href="/user-agent">User Agent</a></div>
+      </div>
+    </div>
+
+    <!-- Design & UI Tools -->
+    <div class="category">
+      <h2>🎨 Design & UI Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">🌑</div><a href="/box-shadow">Box Shadow</a></div>
+        <div class="tool-card"><div class="tool-icon">🟣</div><a href="/border-radius">Border Radius</a></div>
+        <div class="tool-card"><div class="tool-icon">🌈</div><a href="/text-gradient">Text Gradient</a></div>
+        <div class="tool-card"><div class="tool-icon">🥃</div><a href="/glassmorphism">Glassmorphism</a></div>
+        <div class="tool-card"><div class="tool-icon">🟢</div><a href="/neumorphism">Neumorphism</a></div>
+        <div class="tool-card"><div class="tool-icon">📦</div><a href="/flexbox">Flexbox Playground</a></div>
+        <div class="tool-card"><div class="tool-icon">🔳</div><a href="/grid-generator">Grid Generator</a></div>
+        <div class="tool-card"><div class="tool-icon">🎨</div><a href="/tailwind-colors">Tailwind Colors</a></div>
+        <div class="tool-card"><div class="tool-icon">🔤</div><a href="/font-previewer">Font Previewer</a></div>
+        <div class="tool-card"><div class="tool-icon">⚫⚪</div><a href="/contrast-checker">Contrast Checker</a></div>
+      </div>
+    </div>
+
+    <!-- Time & Utility Tools -->
+    <div class="category">
+      <h2>⏱️ Time & Utility Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card"><div class="tool-icon">🍅</div><a href="/pomodoro-timer">Pomodoro Timer</a></div>
+        <div class="tool-card"><div class="tool-icon">⏱️</div><a href="/stopwatch">Stopwatch</a></div>
+        <div class="tool-card"><div class="tool-icon">⏲️</div><a href="/countdown-timer">Countdown Timer</a></div>
+        <div class="tool-card"><div class="tool-icon">🎲</div><a href="/random-number">Random Number</a></div>
+        <div class="tool-card"><div class="tool-icon">🪙</div><a href="/coin-toss">Coin Toss</a></div>
+        <div class="tool-card"><div class="tool-icon">🎲</div><a href="/dice-roller">Dice Roller</a></div>
+        <div class="tool-card"><div class="tool-icon">🔑</div><a href="/password-generator">Password Gen</a></div>
+        <div class="tool-card"><div class="tool-icon">⌨️</div><a href="/typing-test">Typing Test</a></div>
+        <div class="tool-card"><div class="tool-icon">🕒</div><a href="/timezone-clock">Timezone Clock</a></div>
+        <div class="tool-card"><div class="tool-icon">📅</div><a href="/calendar-generator">Calendar</a></div>
+      </div>
+    </div>
+
+    <!-- Bottom Ad Banner -->
+    <div class="ad-container">
+      <span class="ad-label">Advertisement</span>
+      <!-- AdSense Ad Unit -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+           data-ad-slot="YOUR_BOTTOM_BANNER_SLOT_ID"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/about">About Us</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="/contact">Contact</a>
+      <a href="/sitemap">Sitemap</a>
+    </div>
+    <p>© 2023 Ultimate Tools Hub. All rights reserved.</p>
+    
+    <!-- Footer Ad (Text Ad) -->
+    <div style="margin-top: 1.5rem;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+           data-ad-slot="YOUR_FOOTER_SLOT_ID"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  </footer>
+
+  <script>
+    // Search functionality can be added here later
+    document.querySelector('.search-bar input').addEventListener('focus', function() {
+      this.parentElement.style.boxShadow = '0 0 0 3px rgba(59, 130, 246, 0.3)';
+    });
+    
+    document.querySelector('.search-bar input').addEventListener('blur', function() {
+      this.parentElement.style.boxShadow = 'none';
+    });
+    
+    // Load ads after content
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize all ad units
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      
+      // Performance tracking
+      if ('performance' in window) {
+        console.log('Page load time: ' + performance.now() + 'ms');
+      }
+    });
+    
+    // Structured data for SEO
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Ultimate Tools Hub",
+      "url": "https://tools-hub.example.com",
+      "description": "Collection of 100+ free online tools for PDF editing, image processing, QR codes, and developer utilities",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+  </script>
+</body>
+</html>
